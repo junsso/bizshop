@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/*-----------------------------------------------
+@thumbnail
+------------------------------------------------*/
+
+.thumbnail-wrap { margin: -5px -5px -60px;}
+.thumbnail-wrap .thumb-item { position: relative; margin: 5px 5px 50px;}
+.thumbnail-wrap .thumb-item .thumb-inner { position: relative;}
+.thumbnail-wrap .thumb-item a { display: block; }
+.img-wrap { display: block; position: relative; padding-top: 100%; overflow: hidden;}
+.img-wrap img { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: auto;}
+
+/*썸네일 장바구니 및 텍스트*/
+.thumbnail-wrap .thumb-item .cart-btn { display: block; position: absolute; bottom: 14px; right: 13px;}
+.thumbnail-wrap .thumb-item .cart-btn .cart-icon { display: block; width: 60px; height: 60px; margin: 0 auto; background: url('../../images/common/ico_cart.png')no-repeat center / 22px 24px; background-color: rgba(255,255,255,0.7); border-radius: 100px;}
+.thumbnail-wrap .thumb-item .info-wrap a { display: block; padding-top: 15px; }
+.thumbnail-wrap .thumb-item .info-wrap a h2 { font-size: 20px; font-weight: 400; color: rgba(0,0,0,0.8);}
+.thumbnail-wrap .thumb-item .info-wrap a h3 { font-size: 20px; font-weight: 400; padding: 10px 0 20px; color: rgba(0,0,0,0.8);}
+.thumbnail-wrap .thumb-item .price { }
+.thumbnail-wrap .thumb-item .price .current { display: inline-block; vertical-align: middle; font-weight: 900; font-size: 19px; }
+.thumbnail-wrap .thumb-item .price .small_price_line { display: inline-block; vertical-align: middle; text-decoration: line-through; padding-left: 10px; color: #B9B9B9; }
+
+
+/*sale 아이콘*/
+.thumb-item .sale { position: absolute; top: 8px; left: 8px; display: block; width: 98px; height: 98px; padding-top: 10px; background:url('../../images/common/ico_sale.png') no-repeat center center / contain; font-size: 0; color: #fff; z-index: 4; transform:scale(0.8); top: 2px; left: 2px}
+.thumb-item .sale .upper { display: block; font-size: 46px; font-weight: 700; line-height: 1; text-align:center; padding-top:10.5px }
+.thumb-item .sale .upper .unit { font-style: normal; font-size: 18px; line-height: 1; }
+.thumb-item .sale .downer { display: block; font-size: 18px; font-weight: 700; line-height: 1; text-align:center; position:absolute; left:0; right:0; bottom: 16px}
+
+
+/*알뜰상품 유통기한*/
+.term { position: absolute; bottom: 0; left: 0; width: 100%; background: rgba(238,117,0,0.5); text-align: center; padding: 17.5px 0;}
+.term p { color: #fff; font-size: 19px;}
+.term-active .cart-btn { bottom: 69px !important;}
+
+
+/*프레시빈 로스팅*/
+.losting { position: absolute; bottom: 0; left: 0; width: 100%; background: rgba(77,25,0,0.5); text-align: center; padding: 17.5px 0;}
+.losting p { color: #fff; font-size: 19px;}
+.losting-active .cart-btn { bottom: 69px !important;}
+
+

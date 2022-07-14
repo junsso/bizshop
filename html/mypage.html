@@ -1,0 +1,856 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="쟈뎅샵">
+  <meta name="Keywords" content="쟈뎅샵">
+  <meta name="Description" content="쟈뎅샵">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>마이페이지>주문내역</title>
+
+	<link rel="stylesheet" href="../css/libs/slick.css">
+	<link rel="stylesheet" href="../css/libs/slick-theme.css">
+	<link rel="stylesheet" href="../css/libs/swiper.min.css">
+	<link rel="stylesheet" href="../css/ui/base.css">
+	<link rel="stylesheet" href="../css/ui/style.css">
+	<link rel="stylesheet" href="../css/ui/utilities.css">
+	<link rel="stylesheet" href="../css/ui/layout.css">
+	<link rel="stylesheet" href="../css/ui/main.css">
+	<link rel="stylesheet" href="../css/ui/content.css">
+	<link rel="stylesheet" href="../css/ui/content_style.css">
+
+	<!-- js -->
+	<script src="../js/libs/jquery-1.12.3.min.js" type="text/javascript"></script>
+	<script src="../js/libs/slick.js" type="text/javascript"></script>
+	<script src="../js/libs/sly.min.js" type="text/javascript"></script>
+	<script src="../js/libs/swipe.js" type="text/javascript"></script>
+	<script src="../js/libs/swiper.min.js" type="text/javascript"></script>
+	<script src="../js/ui/ui_common.js" type="text/javascript"></script>
+	<script src="../js/ui/ui_publish.js" type="text/javascript"></script>
+
+  </head>
+
+  <body>
+	<div id="bodyWrap">
+	
+		<div class="contents-wrap faq"><!-- contents-wrap클래스는 모든페이지 공통이고 뒤에오는 클래스는 페이지마다 다름 -->	
+
+			<!-- header include-->
+			<header id="header">
+				
+				<div class="heaer-top">
+					<div class="wrapperMd">
+						<ul>
+							<li><a href="mypage.html">마이페이지</a></li>
+							<li><a href="qna.html">고객센터</a></li>
+							<li><a href="#">로그아웃</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- // heaer-top -->
+
+				<div class="search-wrap">
+					<div class="wrapperMd">
+						<div class="div-box logo-box">
+							<a href="main.html"><img src="../images/common/ico_jardin_logo.png" alt="logo" /></a>
+						</div>
+						<div class="div-box search-box">
+							<form action="#">
+								<div class="input_box">
+									<input type="text" placeholder="상품명 또는 키워드로 검색해보세요!" class="input" id="name" autocomplete="off">
+									<button type="submit" class="search-btn"><span class="search"></span></button>
+
+									<div class="drop-dw-box">
+										<h2>인기검색어</h2>
+										<ul>
+											<li><a href="all-product.html">헤이즐넛</a></li>
+											<li><a href="all-product.html">아워티</a></li>
+											<li><a href="all-product.html">아메리카노</a></li>
+											<li><a href="all-product.html">까페라떼</a></li>
+											<li><a href="all-product.html">바닐라</a></li>
+											<li><a href="all-product.html">스위트</a></li>
+											<li><a href="all-product.html">아이스티</a></li>
+											<li><a href="all-product.html">청귤</a></li>
+											<li><a href="all-product.html">원두</a></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="div-box cart-box">
+							<div class="shop-cart">
+								<a href="cart.html" class="cart">장바구니</a>
+								<span>22</span>
+							</div>
+							<div class="shop-cart ch-02">
+								<a href="wish.html" class="wish">위시리스트</a>
+								<span>10</span>
+							</div>
+						</div>
+					</div>
+					<!-- // wrapperMd -->
+				</div>
+				<!-- // search-wrap -->
+
+				<div class="gnb-wrap">
+					<div class="wrapperMd">
+						<ul class="big-gnb row">
+							<li class="category col-md-8"><a href="#">카테고리</a></li><!-- 해당 메뉴 페이지마다 li에 on클래스가 붙어 활성화 되어야함 -->
+							<li class="col-md-8"><a href="recommend-item.html">추천상품</a></li>
+							<li class="col-md-8"><a href="all-product.html">전체상품</a></li>
+							<li class="col-md-8"><a href="event.html">이벤트&혜택</a></li><!-- 특판사업자에게는 히든 됨 -->
+							<li class="col-md-8"><a href="product.html">알뜰상품</a></li>
+							<li class="col-md-8"><a href="recipe.html">레시피</a></li>
+							<li class="col-md-8"><a href="mypage.html">주문/배송</a></li>
+							<li class="col-md-8"><a href="trading.html">거래명세서</a></li>
+						</ul>
+						<div class="category-sub">
+							<ul class="sub-gnb">
+								<li>
+									<h2>카테고리</h2>
+									<ul class="sub-gnb-menu menu01">
+										<li><a href="all-product.html">원두</a></li>
+										<li><a href="all-product.html">커피백</a></li>
+										<li><a href="all-product.html">TEA</a></li>
+										<li><a href="all-product.html">음료</a></li>
+										<li><a href="all-product.html">인스턴트커피</a></li>
+										<li><a href="all-product.html">선물세트</a></li>
+										<li><a href="all-product.html">용품</a></li>
+										<li><a href="fresh-bean.html">Fresh Bean</a></li>
+									</ul>
+								</li>
+								<li>
+									<h2>브랜드</h2>
+									<ul class="sub-gnb-menu menu02">
+										<li><a href="all-product.html">기타</a></li>
+										<li><a href="all-product.html">까페모리</a></li>
+										<li><a href="all-product.html">업소용</a></li>
+										<li><a href="all-product.html">시그니처</a></li>
+										<li><a href="all-product.html">클래스</a></li>
+										<li><a href="all-product.html">까페리얼</a></li>
+										<li><a href="all-product.html">바리스타</a></li>
+										<li><a href="all-product.html">아워티</a></li>
+										<li><a href="all-product.html">마스터즈</a></li>
+										<li><a href="all-product.html">아워티PET</a></li>
+										<li><a href="all-product.html">드립백</a></li>
+										<li><a href="all-product.html">에스프레소 스틱</a></li>
+										<li><a href="all-product.html">커피백</a></li>
+										<li><a href="all-product.html">파우더</a></li>
+										<li><a href="all-product.html">용품</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						
+						<!-- 사이드베뉴바 include -->
+						<div id="sidebar" class="side-menu-wrap">					
+							<div class="new-see-box">
+								<h2>최근 본 상품</h2>
+								<div class="new-see-wrap">
+									<div class="new-see-item">
+										<a href="item-detail.html"><img src="../images/temp/img_thumb05.png" alt="상품이미지" /></a>
+									</div>
+									<div class="new-see-item">
+										<a href="item-detail.html"><img src="../images/temp/img_thumb06.png" alt="상품이미지" /></a>
+									</div>
+									<div class="new-see-item">
+										<a href="item-detail.html"><img src="../images/temp/img_thumb03.png" alt="상품이미지" /></a>
+									</div>
+									<div class="new-see-item">
+										<a href="item-detail.html"><img src="../images/temp/img_thumb02.png" alt="상품이미지" /></a>
+									</div>
+									<div class="new-see-item">
+										<a href="item-detail.html"><img src="../images/temp/img_thumb09.png" alt="상품이미지" /></a>
+									</div>
+									<div class="new-see-item">
+										<a href="item-detail.html"><img src="../images/temp/img_thumb.png" alt="상품이미지" /></a>
+									</div>
+								</div>
+								<div class="top-btn">
+									<a href="#">Top</a>
+								</div>
+							</div>
+							<div class="my-page-btn">
+								<a href="mypage.html" class="">마이페이지</a>
+							</div>
+						</div>
+						<!-- // 사이드베뉴바 include -->
+					</div>
+					<!-- // wrapperMd -->
+				</div>
+				<!-- // gnb-wrap -->
+
+			</header>
+			<!-- // header -->	
+			
+
+			<div class="cotent-body">
+				<div class="wrapperMd">
+					
+					<div class="container">
+
+						<!--  my-info-wrap -->
+						<div class="my-info-wrap">
+							<div class="lf-div-box">
+								<div class="grade-item"> <!-- // 일반등급일때  -->
+									<div class="grade_Icon">
+										<p class="img-wrap">
+											<img src="../images/mypage/grade_icon011.png" alt="img">
+											<span class="grage-text01">일반</span>
+										</p>
+									</div>
+									<div class="grage-info">
+										<p><strong>김쟈뎅</strong>님은 <strong>일반 등급</strong> 입니다.</p>
+										<span>비즈샵 등급 혜택은 <strong>Family 이상부터 적용</strong>됩니다.</span>
+										<a href="my-grade.html">등급혜택▶</a>
+									</div>
+								</div>
+								<!-- <div class="grade-item">  // family등급일때  
+									<div class="grade_Icon">
+										<p class="img-wrap">
+											<img src="../images/mypage/grade_icon012.png" alt="img">
+											<span class="grage-text02">Family</span>
+										</p>
+									</div>
+									<div class="grage-info">
+										<p><strong>김쟈뎅</strong>님은 <strong>Family 등급</strong> 입니다.</p>
+										<span>비즈샵 등급 혜택은 <strong>Family 이상부터 적용</strong>됩니다.</span>
+										<a href="my-grade.html">등급혜택▶</a>
+									</div>
+								</div> -->
+								<!-- <div class="grade-item">  //VIP등급일때  
+									<div class="grade_Icon">
+										<p class="img-wrap">
+											<img src="../images/mypage/grade_icon013.png" alt="img">
+											<span class="grage-text03">VIP</span>
+										</p>
+									</div>
+									<div class="grage-info">
+										<p><strong>김쟈뎅</strong>님은 <strong>VIP 등급</strong> 입니다.</p>
+										<span>비즈샵 등급 혜택은 <strong>Family 이상부터 적용</strong>됩니다.</span>
+										<a href="my-grade.html">등급혜택▶</a>
+									</div>
+								</div>  -->
+								<!--<div class="grade-item">  //VVIP등급일때  
+									<div class="grade_Icon">
+										<p class="img-wrap">
+											<img src="../images/mypage/grade_icon014.png" alt="img">
+											<span class="grage-text04">VVIP</span>
+										</p>
+									</div>
+									<div class="grage-info">
+										<p><strong>김쟈뎅</strong>님은 <strong>VVIP 등급</strong> 입니다.</p>
+										<span>비즈샵 등급 혜택은 <strong>Family 이상부터 적용</strong>됩니다.</span>
+										<a href="my-grade.html">등급혜택▶</a>
+									</div>
+								</div>-->
+
+							</div> 
+							<!-- // lf-div-box -->
+
+							<div class="rt-div-box">
+
+								<div class="graph-title">
+									<p>1,00,000원 추가 구매 시 Family 등급니다.</p>
+								</div>
+								<div class="graph-wrap">
+									<div class="graph-bg">
+										<div class="bar" style="width: 33.33%;"></div>
+										<span class="bubble" style="left: 32.33%"></span><!-- 버블은 1%가 적어야함 -->
+									</div>
+									<div class="rating-name">
+										<ul class="clearfix">
+											<li class="item item01 recent"><!-- 현재등급에는 recent 클래스가 붙고 -->
+												일반
+												<p>쿠폰3장</p>
+											</li>
+											<li class="item item02 recent_Plus"><!-- 다음 등급에  recent_Plus가 붙음-->
+												Family
+												<p>1%적립<br>+쿠폰3장</p>
+											</li>
+											<li class="item item03">
+												VIP
+												<p>2%적립<br>+쿠폰3장</p>
+											</li>
+											<li class="item item04">
+												VVIP
+												<p>3%적립<br>+쿠폰5장</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+							<!-- // my-info-wrap -->
+						</div>
+						<!-- // rt-div-box -->
+						
+						<!-- InfoList-wrap -->	
+						<div class="InfoList-wrap">
+							<div class="infoList-box">
+								<ul>
+									<li>
+										<a href="point.html">
+											포인트 <span>4,104</span>
+										</a>
+									</li>
+									<li>
+										<a href="coupon.html">
+											쿠폰 <span>5</span>
+										</a>
+									</li>
+									<li>
+										<a href="deposit.html">
+											예치금 <span>4,104</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="my-box">
+								<a href="my-review.html">구매후기 <strong>20</strong>건</a>
+								<a href="my-event.html">참여 이벤트  <strong>1</strong>건</a>
+							</div>
+						</div>
+						<!-- // InfoList-wrap -->	
+						
+						<div class="div-contain clearfix">
+							<!-- jr-nav-left -->	
+							<div class="jr-nav-left my-side">
+								<ul id="my-sidebar">
+									<li class="active"><a href="mypage.html" class="new-icon">주문내역</a></li>
+									<li class=""><a href="my-claim.html" class="new-icon">취소/교환/반품</a></li>
+									<li class=""><a href="trading.html">거래명세서</a></li>
+									<li class=""><a href="my-info.html">내 정보 관리</a></li>
+								</ul>
+							</div>
+							<!-- // jr-nav-left -->
+							
+							<!-- jr-nav-right -->	
+							<div class="jr-nav-right">
+								<div class="category-wrap order-category">
+									<h2 class="title-tag">주문내역<span>최근 1개월 내역입니다.</span></h2>	
+									<div class="select-wrap">
+										<select class="select require" name="qa_category" required="" id="qa_category">
+											<option value="option01">기간 조회</option>
+											<option value="option02">3개월</option>
+											<option value="option03">6개월</option>
+											<option value="option04">12개월</option>
+											<option value="option05">기간 설정</option>
+										</select>
+									</div>
+									<!-- 기간조회 -->
+									<div class="detail-date">
+										<form action="" method="post" class="search-form">
+											<input type="hidden" name="status" value="">
+											<p class="notice">
+												과거 거래 내역은 최근 5년까지 조회가 가능하며<br>
+												최대 6개월 단위까지 기간을 설정하여 조회할 수 있습니다.
+											</p>
+											<div class="date-input-wrap">
+												<div class="input-wrap">
+													<input type="date" class="input" name="startDate" placeholder="조회 시작일" value="2020-07-05" min="2015-08-05" max="2020-08-05">
+												</div>
+												<span class="bridge">~</span>
+												<div class="input-wrap">
+													<input type="date" class="input" name="endDate" placeholder="조회 종료일" value="2020-08-05" min="2015-08-05" max="2020-08-05">
+												</div>
+											</div>
+											<div class="search-input-wrap">
+												<input type="text" class="input" name="keyword" placeholder="검색어를 입력해주세요.">
+											</div>
+											<div class="button-wrap">
+												<a href="#;" class="button is-close" data-toggle="close">닫기</a>
+												<input type="submit" class="button is-search" value="조회">
+											</div>
+										</form>
+									</div>
+									<!-- // 기간조회 -->
+								</div>
+								<!-- // category-wrap -->
+
+								<div class="currentOrder">
+									<ul>
+										<li>
+											<a href="#;">7<p>입금대기</p></a>
+										</li>
+										<li>
+											<a href="#;">2<p>결제완료</p></a>
+										</li>
+										<li>
+											<a href="#;">7<p>상품준비중</p></a>
+										</li>
+										<li>
+											<a href="#;">10<p>배송중</p></a>
+										</li>
+										<li>
+											<a href="#;">15<p>배송완료</p></a>
+										</li>
+									</ul>
+								</div>
+
+								<div class="order-list">
+
+									<div class="order-header">
+										<div class="check-wrap input_box">
+											<input type="checkbox" class="check_box" name="check" id="agreeAll">
+											<label for="agreeAll" class="label04">
+												전체선택
+											</label>
+											<div class="count">
+												(<span class="recent">5</span> / <span class="total-qty">5</span>)
+											</div>
+										</div>
+										<div class="btn_box">
+											<a href="cart.html" class="re-buy-btn">선택 재주문</a>
+										</div>
+									</div>
+									
+									<div class="order-body">
+
+										<div class="order-item"><!-- 입금대기 -->
+
+											<div class="order-number">			
+												<span>주문번호 <em>2020129040204</em></span>
+												<p>입금대기</p>
+											</div>
+
+											<div class="item-contain">
+												<div class="lf-thumb">
+													<a href="my-order-detail.html">
+														<p class="img-wrap"><img src="../images/temp/img_thumb.png" alt="상품이미지"></p>
+													</a>
+												</div>
+												<div class="rt-option rt-op-padding">
+													<a href="my-order-detail.html">
+														<h2><span>[음료]</span> 시그니처 1.1L 아메리카노 블랙</h2>
+														<p>주문일자&nbsp;&nbsp; | &nbsp;&nbsp;<em>2020.12.09 (9시 10분)</em></p>
+														<p>주문금액&nbsp;&nbsp; | &nbsp;&nbsp;<em>310,000원</em></p>
+													</a>
+
+													<div class="order-option">
+														<div class="btn_box order-btn-box">
+															<a href="#;" class="link-btn-border btn-radius3" data-popup="cancel">주문 취소</a>
+															<a href="qna-write.html" class="link-btn-border btn-radius3">1:1문의</a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<!-- // order-item -->
+
+										<div class="order-item"><!-- 배송준비 -->
+
+											<div class="order-number">			
+												<span>주문번호 <em>2020129040204</em></span>
+												<p>배송준비</p>
+											</div>
+
+											<div class="item-contain">
+												<div class="lf-thumb">
+													<a href="my-order-detail.html">
+														<p class="img-wrap"><img src="../images/temp/img_thumb06.png" alt="상품이미지"></p>
+													</a>
+												</div>
+												<div class="rt-option">
+													<a href="my-order-detail.html">
+														<h2><span>[음료]</span> 시그니처 1.1L 아메리카노 블랙</h2>
+														<p>주문일자&nbsp;&nbsp; | &nbsp;&nbsp;<em>2020.12.09 (9시 10분)</em></p>
+														<p>주문금액&nbsp;&nbsp; | &nbsp;&nbsp;<em>310,000원</em></p>
+													</a>
+
+													<div class="order-option">
+														<div class="btn_box order-btn-box">
+															<a href="#;" class="link-btn-border btn-radius4 " data-popup="cancel">교환/반품</a>
+															<a href="qna-write.html" class="link-btn-border btn-radius4 ">1:1문의</a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<!-- // order-item -->
+
+										<div class="order-item"><!-- 배송중 -->
+
+											<div class="order-number">			
+												<span>주문번호 <em>2020129040204</em></span>
+												<p>배송중</p>
+											</div>
+
+											<div class="item-contain">
+												<div class="lf-thumb">
+													<a href="my-order-detail.html">
+														<p class="img-wrap"><img src="../images/temp/img_thumb04.png" alt="상품이미지"></p>
+													</a>
+												</div>
+												<div class="rt-option">
+													<a href="my-order-detail.html">
+														<h2><span>[음료]</span> 시그니처 1.1L 아메리카노 블랙</h2>
+														<p>주문일자&nbsp;&nbsp; | &nbsp;&nbsp;<em>2020.12.09 (9시 10분)</em></p>
+														<p>주문금액&nbsp;&nbsp; | &nbsp;&nbsp;<em>310,000원</em></p>
+													</a>
+
+													<div class="order-option">
+														<div class="btn_box order-btn-box">
+															<a href="#;" class="link-btn-border btn-radius4 " data-popup="deliver">배송조회</a>
+															<a href="qna-write.html" class="link-btn-border btn-radius4 ">1:1문의</a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<!-- // order-item -->
+
+										<div class="order-item"><!-- 배송완료 구매후기 작성완료-->
+
+											<div class="order-number">			
+												<span>주문번호 <em>2020129040204</em></span>
+												<p>배송완료</p>
+											</div>
+
+											<div class="item-contain">
+												<div class="lf-thumb">
+													<a href="my-order-detail.html">
+														<p class="img-wrap"><img src="../images/temp/img_thumb02.png" alt="상품이미지"></p>
+													</a>
+												</div>
+												<div class="rt-option">
+													<a href="my-order-detail.html">
+														<h2><span>[음료]</span> 시그니처 1.1L 아메리카노 블랙</h2>
+														<p>주문일자&nbsp;&nbsp; | &nbsp;&nbsp;<em>2020.12.09 (9시 10분)</em></p>
+														<p>주문금액&nbsp;&nbsp; | &nbsp;&nbsp;<em>310,000원</em></p>
+													</a>
+													<span class="rev-com">후기 작성 완료</span><!-- 구매후기 작성 완료 일때 노출 -->
+
+													<div class="order-option">
+														<div class="btn_box order-btn-box">
+															<a href="#;" class="link-btn-border btn-radius4 " data-popup="deliver">배송조회</a>
+															<a href="my-review.html" class="link-btn-border btn-radius4 rev-com-hd">구매후기</a><!-- 구매후기 작성이 완료되면 rev-com-hd 클래스가 활성화됨 -->
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<!-- // order-item -->
+
+										<div class="order-item"><!-- 배송완료 구매후기 작성 가능 -->
+
+											<div class="order-number">			
+												<span>주문번호 <em>2020129040204</em></span>
+												<p>배송완료</p>
+											</div>
+
+											<div class="item-contain">
+												<div class="lf-thumb">
+													<a href="my-order-detail.html">
+														<p class="img-wrap"><img src="../images/temp/img_thumb03.png" alt="상품이미지"></p>
+													</a>
+												</div>
+												<div class="rt-option">
+													<a href="my-order-detail.html">
+														<h2><span>[음료]</span> 시그니처 1.1L 아메리카노 블랙</h2>
+														<p>주문일자&nbsp;&nbsp; | &nbsp;&nbsp;<em>2020.12.09 (9시 10분)</em></p>
+														<p>주문금액&nbsp;&nbsp; | &nbsp;&nbsp;<em>310,000원</em></p>
+													</a>
+
+													<div class="order-option">
+														<div class="btn_box order-btn-box">
+															<a href="#;" class="link-btn-border btn-radius4 " data-popup="deliver">배송조회</a>
+															<a href="my-review.html" class="link-btn-border btn-radius4 ">구매후기</a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<!-- // order-item -->
+
+									</div>
+									<!-- // order-body -->
+								</div>
+								<!-- // order-list -->
+
+							</div>
+							<!-- // jr-nav-right -->
+						</div>
+						<!-- // jr-nav-right -->
+
+					</div>
+					<!-- // container -->						
+					
+				</div>
+				<!-- // wrapperMd -->	
+			</div>
+			<!-- // cotent-body -->	
+			
+			<!-- footer include-->
+			<footer class="footer">
+				<div class="wrapperMd">
+					<div class="info-wrap">
+						<div class="cont-box customer">
+							<h2>고객센터 <strong>02-546-3881</strong></h2>
+						</div>
+						<div class="cont-box info">
+							<a href="privacy.html">개인정보취급방침</a>
+							<a href="privacy02.html">이용약관</a>
+							<a href="http://jardin.co.kr/front/board.php?bbs_id=recruit_notice">채용안내</a>
+							<a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=2118124727&apv_perm_no=">사업자정보확인</a>
+							<a href="http://jardinshop.co.kr/confirmPp.php">에스크로서비스</a>
+						</div>
+						
+					</div>	
+
+					<div class="content">
+						<div class="cont-box info-bord">
+							<ul>
+								<li>카카오톡 플러스 친구 <a href="https://pf.kakao.com/_xczgxjT" target="_blank">@jardin</a> 추가하고 소식과 혜택을 받아보세요.</li>
+								<li><a href="faq.html">자주묻는 질문</a>이 궁금해요.</li>
+								<li><a href="login.html">회원가입</a>하고 회원 전용 혜택을 받아보세요.</li>
+							</ul>
+						</div>
+						<div class="cont-box company-info">
+							<p>(쟈뎅) 서울시 강남구 논현동 4-21번지 영 빌딩</p>
+							<p>E-mail : kimmy5648@jardin.co.kr</p>
+							<p>사업자등록번호 : 211-81-24727 / 통신판매업신고번호 : 제 강남 - 1160호</p>
+							<p>대표이사 : 윤상용 외 1인 / 개인정보관리책임자 : 윤상용</p>
+							<p>tel : 02-546-3881 / fax : 02-542-4680 / mail : kimmy5648@jardin.co.kr</p>
+						</div>
+					</div>
+
+					<div class="content content02">
+						<div class="cont-box sns">
+							<ul>
+								<li><a href="https://www.instagram.com/jardin_official/" target="_blank"><img src="../images/common/ico_instar.png" alt="인스타그램" /></a></li>
+								<li><a href="https://www.facebook.com/thejardin/" target="_blank"><img src="../images/common/ico_facebook.png" alt="페이스북" /></a></li>
+								<li><a href="http://blog.naver.com/jardinblog" target="_blank"><img src="../images/common/ico_blog.png" alt="블로그" /></a></li>
+								<li><a href="https://www.youtube.com/channel/UCbHd-yVP7uFTqDW0LB3V6TQ" target="_blank"><img src="../images/common/ico_youtube.png" alt="유튜브" /></a></li>
+							</ul>
+						</div>
+						<div class="cont-box copyright">
+							<p>COPYRIGHT (주)쟈뎅 ALL RIGHTS RESERVED.</p>
+						</div>
+					</div>
+					
+				</div>
+			</footer>
+			<!-- // footer include-->
+		</div>		
+		<!-- // contents-wrap -->
+	
+	</div>
+	<!-- // bodyWrap -->	
+
+	<div class="popup-wrap">
+		<div class="popup-overlay"></div>
+		
+		<!-- 취소/교환/반품 팝업-->
+		<div class="popup cancel" id="cancelPopup">
+			<div class="popup-inner">
+				<div class="title-wrap">
+					<h3 class="title">취소/교환/반품</h3>
+					<a href="javascript:void(0)" class="close-popup">팝업 닫기</a>
+				</div>
+				<div class="contents">
+					
+					<div class="table-wrap">
+						<table>
+							<tr>
+								<th>주문번호</th>
+								<td>
+									<h2>20209203254485</h2>
+								</td>
+							</tr>
+							<tr>
+								<th>신청내용</th>
+								<td>
+									<div class="select-wrap">
+										<select class="select require" name="qa_category" required>
+											<option value="">신청내용을 선택해주세요</option>
+											<option value="교환">교환</option>
+											<option value="반품">반품</option>
+											<option value="주문취소">주문취소</option>
+										</select>
+										<i class="arrow"></i>
+									</div>
+								</td>
+							</tr>
+							<tr class="pro-choice">
+								<th>상품선택</th>
+								<td>
+									<div class="check-wrap input_box">
+										<input type="checkbox" class="check_box" name="check" id="agreeAll">
+										<label for="agreeAll" class="label04">
+											전체상품 선택
+										</label>
+									</div>
+									<div class="cart-item">
+
+										<div class="input_box">			
+											<input type="checkbox" class="check_box" name="check" id="checking">
+											<label for="checking" class="label04"></label>
+										</div>
+
+										<div class="item-contain">
+											<div class="lf-thumb">
+												<a href="item-detail.html">
+													<p class="img-wrap"><img src="../images/temp/img_thumb.png" alt="상품이미지"></p>
+												</a>
+											</div>
+											<div class="rt-option">
+												<h2>[까페모리]</h2>
+												<p>복숭아 아이스티</p>
+												<p>9,900원 / 1개</p>
+											</div>
+										</div>
+									</div>
+									<!-- // cart-item -->
+
+									<div class="cart-item">
+
+										<div class="input_box">			
+											<input type="checkbox" class="check_box" name="check" id="checking">
+											<label for="checking" class="label04"></label>
+										</div>
+
+										<div class="item-contain">
+											<div class="lf-thumb">
+												<a href="item-detail.html">
+													<p class="img-wrap"><img src="../images/temp/img_thumb.png" alt="상품이미지"></p>
+												</a>
+											</div>
+											<div class="rt-option">
+												<h2>[까페모리]</h2>
+												<p>복숭아 아이스티</p>
+												<p>9,900원 / 1개</p>
+											</div>
+										</div>
+									</div>
+									<!-- // cart-item -->
+								</td>
+							</tr>
+							<tr class="contents">
+								<th>상세내용</th>
+								<td>
+									<textarea class="textarea" placeholder="희망 사유를 상세히 적어주시면 빠른 처리 도와드리겠습니다"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<th>이미지 첨부</th>
+								<td>
+									<div class="input-wrap file_wrap">
+										<span id="file-name" class="file-box"></span>
+										<div class="file-item-box">
+											<input type="file" name="upload[]" id="bizpaper" class="input-attach require" onchange="uploadFile(this)" accept="image/*">
+											<label for="bizpaper">
+												<span class="file-button">파일선택</span>
+											</label>
+										</div>
+										<div class="info_text text02"><p>※ 6MB 용량 이하만 업로드 가능합니다.</p></div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th></th>
+								<td>
+									<div class="btn_box reg_more_btn02">
+										<a href="#;" class="link-btn btn-gray btn-radius3 close-popup" >취소</a>
+										<a href="#;" class="link-btn btn-radius3" >접수</a>				
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<!-- // table-wrap -->					
+				</div>
+				<!-- // contents -->		
+				
+			</div>
+		</div>
+		<!-- // end popup -->
+
+		<!-- 배송조회 팝업-->
+		<div class="popup cancel deliver" id="deliverPopup">
+			<div class="popup-inner">
+				<div class="title-wrap">
+					<h3 class="title">배송조회</h3>
+					<a href="javascript:void(0)" class="close-popup">팝업 닫기</a>
+				</div>
+				<div class="contents">
+					
+					<div class="table-wrap">
+						<table>
+							<tr>
+								<th>주문번호</th>
+								<td>
+									<h2>20209203254485</h2>
+								</td>
+							</tr>
+							<tr>
+								<th>진행상태</th>
+								<td>
+									<div class="deliver-list">
+										<div class="del-list-line"><p>롯데택배 </p><a href="#" target="_blank">2329-8604-3441</a></div>
+										<div class="del-list-line"><p>롯데택배 </p><a href="#" target="_blank">2329-8604-3441</a></div>
+									</div>
+								</td>	
+							</tr>							
+						</table>
+					</div>
+					<!-- // table-wrap -->					
+				</div>
+				<!-- // contents -->		
+				
+			</div>
+		</div>
+		<!-- // end popup -->
+	
+	</div>
+	<!-- // popup-wrap -->
+
+  </body>
+
+  </html>
+
+  <script type="text/javascript">
+	
+	//기간조회 팝업
+	$('#qa_category').change(function() {
+		var state = jQuery('#qa_category option:selected').val();
+		if ( state == 'option05' ) {
+			$('.detail-date').addClass('show');
+		} else {
+			$('.detail-date').removeClass('show');
+		}
+	});
+	$('.is-close').on('click', function (e) {
+		$('.detail-date').removeClass('show');
+	});
+
+
+	//전체선택 체크박스
+	$("#agreeAll").click(function(){ 
+		if($("#agreeAll").prop("checked")) { 
+			$("input[name=check]").prop("checked",true); 
+				} else { $("input[name=check]").prop("checked",false);} 		
+	});
+
+	 //파일추가
+	function uploadFile(target) {
+		if(target.files[0].size > 6000000){
+		   alert("6M이하 이미지 파일만 업로드가 가능합니다.");
+		   this.value = "";
+		} else {
+			document.getElementById("file-name").innerHTML = target.files[0].name;
+			$('#file-name').addClass('active');
+			//$('.file-button').text('다시 첨부하기');
+		}
+	}
+
+
+	
+  </script>

@@ -1,0 +1,1291 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="쟈뎅샵">
+  <meta name="Keywords" content="쟈뎅샵">
+  <meta name="Description" content="쟈뎅샵">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>상세페이지</title>
+
+	<link rel="stylesheet" href="../css/libs/slick.css">
+	<link rel="stylesheet" href="../css/libs/slick-theme.css">
+	<link rel="stylesheet" href="../css/libs/swiper.min.css">
+	<link rel="stylesheet" href="../css/libs/lightgallery.css">
+	<link rel="stylesheet" href="../css/ui/base.css">
+	<link rel="stylesheet" href="../css/ui/style.css">
+	<link rel="stylesheet" href="../css/ui/utilities.css">
+	<link rel="stylesheet" href="../css/ui/layout.css">
+	<link rel="stylesheet" href="../css/ui/main.css">
+	<link rel="stylesheet" href="../css/ui/content.css">
+
+	<!-- js -->
+	<script src="../js/libs/jquery-1.12.3.min.js" type="text/javascript"></script>
+	<script src="../js/libs/slick.js" type="text/javascript"></script>
+	<script src="../js/libs/sly.min.js" type="text/javascript"></script>
+	<script src="../js/libs/swipe.js" type="text/javascript"></script>
+	<script src="../js/libs/swiper.min.js" type="text/javascript"></script>
+	<script src="../js/libs/lightgallery-all.min.js" type="text/javascript"></script>
+	<script src="../js/ui/ui_common.js" type="text/javascript"></script>
+	<script src="../js/ui/ui_publish.js" type="text/javascript"></script>
+
+  </head>
+
+  <body>
+	<div id="bodyWrap">
+	
+		<div class="contents-wrap item-detail">	<!-- contents-wrap클래스는 모든페이지 공통이고 뒤에오는 클래스는 페이지마다 다름 -->	
+
+			<!-- header include-->
+			<header id="header">
+				
+				<div class="heaer-top">
+					<div class="wrapperMd">
+						<ul>
+							<li><a href="mypage.html">마이페이지</a></li>
+							<li><a href="notice.html">고객센터</a></li>
+							<li><a href="#">로그아웃</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- // heaer-top -->
+
+				<div class="search-wrap">
+					<div class="wrapperMd">
+						<div class="div-box logo-box">
+							<a href="main.html"><img src="../images/common/ico_jardin_logo.png" alt="logo" /></a>
+						</div>
+						<div class="div-box search-box">
+							<form action="#">
+								<div class="input_box">
+									<input type="text" placeholder="상품명 또는 키워드로 검색해보세요!" class="input" id="name" autocomplete="off">
+									<button type="submit" class="search-btn"><span class="search"></span></button>
+
+									<div class="drop-dw-box">
+										<h2>인기검색어</h2>
+										<ul>
+											<li><a href="all-product.html">헤이즐넛</a></li>
+											<li><a href="all-product.html">아워티</a></li>
+											<li><a href="all-product.html">아메리카노</a></li>
+											<li><a href="all-product.html">까페라떼</a></li>
+											<li><a href="all-product.html">바닐라</a></li>
+											<li><a href="all-product.html">스위트</a></li>
+											<li><a href="all-product.html">아이스티</a></li>
+											<li><a href="all-product.html">청귤</a></li>
+											<li><a href="all-product.html">원두</a></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="div-box cart-box">
+							<div class="shop-cart">
+								<a href="cart.html" class="cart">장바구니</a>
+								<span>22</span>
+							</div>
+							<div class="shop-cart ch-02">
+								<a href="wish.html" class="wish">위시리스트</a>
+								<span>10</span>
+							</div>
+						</div>
+					</div>
+					<!-- // wrapperMd -->
+				</div>
+				<!-- // search-wrap -->
+
+				<div class="gnb-wrap">
+					<div class="wrapperMd">
+						<ul class="big-gnb row">
+							<li class="category col-md-8"><a href="#">카테고리</a></li><!-- 해당 메뉴 페이지마다 li에 on클래스가 붙어 활성화 되어야함 -->
+							<li class="col-md-8"><a href="recommend-item.html">추천상품</a></li>
+							<li class="col-md-8"><a href="all-product.html">전체상품</a></li>
+							<li class="col-md-8"><a href="event.html">이벤트&혜택</a></li><!-- 특판사업자에게는 히든 됨 -->
+							<li class="col-md-8"><a href="product.html">알뜰상품</a></li>
+							<li class="col-md-8"><a href="recipe.html">레시피</a></li>
+							<li class="col-md-8"><a href="mypage.html">주문/배송</a></li>
+							<li class="col-md-8"><a href="trading.html">거래명세서</a></li>
+						</ul>
+						<div class="category-sub">
+							<ul class="sub-gnb">
+								<li>
+									<h2>카테고리</h2>
+									<ul class="sub-gnb-menu menu01">
+										<li><a href="all-product.html">원두</a></li>
+										<li><a href="all-product.html">커피백</a></li>
+										<li><a href="all-product.html">TEA</a></li>
+										<li><a href="all-product.html">음료</a></li>
+										<li><a href="all-product.html">인스턴트커피</a></li>
+										<li><a href="all-product.html">선물세트</a></li>
+										<li><a href="all-product.html">용품</a></li>
+										<li><a href="fresh-bean.html">Fresh Bean</a></li>
+									</ul>
+								</li>
+								<li>
+									<h2>브랜드</h2>
+									<ul class="sub-gnb-menu menu02">
+										<li><a href="all-product.html">기타</a></li>
+										<li><a href="all-product.html">까페모리</a></li>
+										<li><a href="all-product.html">업소용</a></li>
+										<li><a href="all-product.html">시그니처</a></li>
+										<li><a href="all-product.html">클래스</a></li>
+										<li><a href="all-product.html">까페리얼</a></li>
+										<li><a href="all-product.html">바리스타</a></li>
+										<li><a href="all-product.html">아워티</a></li>
+										<li><a href="all-product.html">마스터즈</a></li>
+										<li><a href="all-product.html">아워티PET</a></li>
+										<li><a href="all-product.html">드립백</a></li>
+										<li><a href="all-product.html">에스프레소 스틱</a></li>
+										<li><a href="all-product.html">커피백</a></li>
+										<li><a href="all-product.html">파우더</a></li>
+										<li><a href="all-product.html">용품</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+						<!-- 사이드베뉴바 include -->
+						<div id="sidebar" class="side-menu-wrap">					
+							<div class="new-see-box">
+								<h2>최근 본 상품</h2>
+								<div class="new-see-wrap">
+									<div class="new-see-item">
+										<a href="item-detail.html"><img src="../images/temp/img_thumb05.png" alt="상품이미지" /></a>
+									</div>
+									<div class="new-see-item">
+										<a href="item-detail.html"><img src="../images/temp/img_thumb06.png" alt="상품이미지" /></a>
+									</div>
+									<div class="new-see-item">
+										<a href="item-detail.html"><img src="../images/temp/img_thumb03.png" alt="상품이미지" /></a>
+									</div>
+									<div class="new-see-item">
+										<a href="item-detail.html"><img src="../images/temp/img_thumb02.png" alt="상품이미지" /></a>
+									</div>
+									<div class="new-see-item">
+										<a href="item-detail.html"><img src="../images/temp/img_thumb09.png" alt="상품이미지" /></a>
+									</div>
+									<div class="new-see-item">
+										<a href="item-detail.html"><img src="../images/temp/img_thumb.png" alt="상품이미지" /></a>
+									</div>
+								</div>
+								<div class="top-btn">
+									<a href="#">Top</a>
+								</div>
+							</div>
+							<div class="my-page-btn">
+								<a href="mypage.html" class="">마이페이지</a>
+							</div>
+						</div>
+						<!-- // 사이드베뉴바 include -->
+					</div>
+					<!-- // wrapperMd -->
+				</div>
+				<!-- // gnb-wrap -->
+
+			</header>
+			<!-- // header -->	
+			
+
+			<div class="cotent-body">
+				<div class="wrapperMd">
+					<div class="detail-contain">						
+
+						<section class="item-form">
+
+							<div class="product-thumb-wrap">
+								<div class="pro-imgbox">
+									<div class="img-wrap"><img src="../images/temp/img_thumb04.png" alt="썸네일이미지" /></div>
+									<div class="img-wrap"><img src="../images/temp/img_thumb05.png" alt="썸네일이미지" /></div>
+									<div class="img-wrap"><img src="../images/temp/img_thumb06.png" alt="썸네일이미지" /></div>
+									<div class="img-wrap"><img src="../images/temp/img_thumb07.png" alt="썸네일이미지" /></div>
+									<div class="img-wrap"><img src="../images/temp/img_thumb08.png" alt="썸네일이미지" /></div>
+								</div>
+
+								<div class="pro-sub-box">
+									<div class="pro-sub-item ">
+										<p class="img-wrap"><img src="../images/temp/img_thumb04.png" alt="썸네일이미지" /></p>
+									</div>
+									<div class="pro-sub-item ">
+										<p class="img-wrap"><img src="../images/temp/img_thumb05.png" alt="썸네일이미지" /></p>
+									</div>
+									<div class="pro-sub-item ">
+										<p class="img-wrap"><img src="../images/temp/img_thumb06.png" alt="썸네일이미지" /></p>
+									</div>
+									<div class="pro-sub-item ">
+										<p class="img-wrap"><img src="../images/temp/img_thumb07.png" alt="썸네일이미지" /></p>
+									</div>
+									<div class="pro-sub-item ">
+										<p class="img-wrap"><img src="../images/temp/img_thumb08.png" alt="썸네일이미지" /></p>
+									</div>
+								</div>
+							</div>
+							<!-- // product-thumb-wrap -->	
+
+							<div class="product-summary-wrap">
+
+								<div class="meta-row row-01">
+									<div class="meta-name"><h2>[원두]클래스</h2></div>
+									<div class="meta-value">마일드 콜롬비아 1kg (홀빈)</div>
+								</div>
+
+								<div class="meta-row row-02">
+									<div class="meta-name">10,200<span>원</span></div>
+									<div class="meta-value text-orange">회원 등급 할인 적용가</div>
+								</div>
+
+								<div class="meta-row row-03 summary-info shelf-life"><!-- 유통기한은 알뜰상품일떄만 노출 -->
+									<div class="meta-name">유통기한</div>
+									<div class="meta-value">2020.09.22</div>
+								</div>
+
+								<div class="meta-row row-04 ">
+									<div class="summary-info">
+										<div class="meta-name">판매코드</div>
+										<div class="meta-value">1575374831</div>
+									</div>
+									<div class="summary-info">
+										<div class="meta-name">판매단위</div>
+										<div class="meta-value">박스(6개입)</div>
+									</div>
+									<div class="summary-info">
+										<div class="meta-name">배송구분</div>
+										<div class="meta-value">직접배송(용차) / 택배(구매 금액별 상이함)</div>
+									</div>
+									<div class="summary-info">
+										<div class="meta-name">판매금액</div>
+										<div class="meta-value through">19,200원</div>
+									</div>
+									<div class="summary-info">
+										<div class="meta-name">주의사항</div>
+										<div class="meta-value">주문 순서대로 출고 중 (미출고 시 안내 예정)</div>
+									</div>
+								</div>
+
+								<div class="meta-row row-05 summary-info pro-option"><!-- 옵션이 있을때 노출 -->
+									<div class="meta-name">상품선택</div>
+									<div class="meta-value">
+										<div class="select-box ">
+											<div class="select-main btn-radius3">
+												<p>옵션을 선택해주세요.</p>
+												<i class="arrow-btn"></i>
+											</div>
+											<div class="select-option">
+												<ul>
+													<li>
+														<p>로얄 헤이즐넛 분쇄 100g(20개입)</p>
+														<span>55,000원</span>
+													</li>
+													<li>
+														<p>로얄 헤이즐넛 분쇄 100g(20개입)</p>
+														<span>105,000원</span>
+													</li>
+													<li>
+														<p>로얄 헤이즐넛 분쇄 100g(20개입)</p>
+														<span>55,000원</span>
+													</li>
+													<li>
+														<p>로얄 헤이즐넛 분쇄 100g(20개입)</p>
+														<span>55,000원</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div> 
+
+								<div class="meta-row row-06 summary-info"> <!-- 상단 드롭다운 박스에서 상품 선택시 동적으로 추가됨-->					
+									<div class="option-select-item btn-radius3">
+										<h2>로얄 헤이즐넛 분쇄 100g(20개입)</h2>
+										<span class="close-btn"></span>
+										<div class="option-value">
+											<div class="qty-controls">
+												<input type="button" value="-" class="qty-button qty-minus">
+												<input type="number" value="0" class="qty">
+												<input type="button" value="+" class="qty-button qty-plus">
+											</div>
+											<p>55,000원</p>
+										</div>
+									</div>
+									<div class="option-select-item btn-radius3"><!-- 상단 드롭다운 박스에서 상품 선택시 동적으로 추가됨-->	
+										<h2>로얄 헤이즐넛 분쇄 200g(40개입)</h2>
+										<span class="close-btn"></span>
+										<div class="option-value">
+											<div class="qty-controls">
+												<input type="button" value="-" class="qty-button qty-minus">
+												<input type="number" value="0" class="qty">
+												<input type="button" value="+" class="qty-button qty-plus">
+											</div>
+											<p>55,000원</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="meta-row row-07 summary-info"> <!-- 단품일때  -->
+									<div class="meta-name">구매수량</div>
+									<div class="meta-value">
+										<div class="option-value">
+											<div class="qty-controls">
+												<input type="button" value="-" class="qty-button qty-minus">
+												<input type="number" value="0" class="qty" >
+												<input type="button" value="+" class="qty-button qty-plus" >
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="meta-row row-08 summary-info">
+									<div class="meta-name text-orange">상품금액 합계</div>
+									<div class="meta-value text-orange">10,200 <span>원</span></div>									
+								</div>	
+								
+								<div class="cart-box">
+									<div class="btn_box wish-btn"><a href="#;" class="link-btn-border btn-border-gray btn-radius3" id="more_GO"></a></div><!-- wish 버튼을 누르면 wish-btn에 active클래스가 붙음 -->
+									<div class="btn_box reg_more_btn">
+										<a href="cart.html" class="link-btn btn-gray btn-radius3" id="more_CART_detail">장바구니담기</a>
+										<a href="order-page.html" class="link-btn btn-radius3" id="more_GO">바로구매</a>				
+									</div>
+								</div>
+
+						</section>
+						<!-- // item-form -->	
+
+						<section class="item-detail">
+							<div class="item-nav-wrap">
+								<ul class="tab">
+									<li class="tab-link current" data-tab="pro-detail">상세설명</li>
+									<li class="tab-link " data-tab="pro-review">상품평(1,510)</li>
+									<li class="tab-link " data-tab="pro-qna">상품문의(3)</li>
+									<li class="tab-link " data-tab="pro-info">정보고시</li>
+								</ul>
+							</div>
+							<div class="item-contents">
+								<!-- 상세설명 -->
+								<div id="pro-detail" class="item-cont current">
+									<div class="item-detail-img"><img src="../images/temp/img_item-detail_contents.png" alt="상세이미지" /></div>
+								</div>
+								<!-- // 상세설명 -->
+
+								<!-- 상품평 -->
+								<div id="pro-review" class="item-cont">
+									<div class="title-box-wrap">
+										<h2>고객상품평</h2>
+										<p>상품을 구매하신 분들이 작성하신 상품평입니다. 상품평 작성 시 아래 금액만큼 포인트가 적립됩니다.</p>
+										<ul>
+											<li>텍스트 상품평</li>
+											<li><span>50P</span> 포토 상품평</li>
+											<li><span>100P</span></li>
+										</ul>
+									</div>
+
+									<div class="rev-contents">
+										
+										<div class="pro_review_contain">
+											<div class="totalRating">
+
+												<div class="total-star-box">
+													<div class="downer detail">
+														<div class="rating-review">
+															<div class="full_stars_wrap">
+																<div class="full_stars_Cont">
+																	<div class="full_stars_Orange" style="width:73%;"></div>
+																	<div class="full_stars"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<h3>4.5<span>/</span><em>5.0</em></h3>
+												</div>
+
+												<div class="rvSection sectionA item_Bar01">
+
+													<div class="rev_bar_Cont">
+														<table>
+															<tr>
+																<td><h4>상품 만족도</h4></td>
+																<td class="rateBar">
+																	<p class="bar">
+																		<span style="width:calc(100%)"></span>
+																	</p>
+																</td>
+																<td><em>100%</em></td>
+															</tr>
+														</table>
+													</div>
+
+													<div class="rev_bar_Cont">
+														<table>
+															<tr>
+																<td><h4>배송 만족도</h4></td>
+																<td class="rateBar">
+																	<p class="bar">
+																		<span style="width:calc(100%)"></span>
+																	</p>
+																</td>
+																<td><em>100%</em></td>
+															</tr>
+														</table>
+													</div>
+
+													<div class="rev_bar_Cont">
+														<table>
+															<tr>
+																<td><h4>재구매 의향</h4></td>
+																<td class="rateBar">
+																	<p class="bar">
+																		<span style="width:calc(60%)"></span>
+																	</p>
+																</td>
+																<td><em>60%</em></td>
+															</tr>
+														</table>
+													</div>
+
+												</div>
+												<!-- // rvSection -->
+											</div>
+											<!-- // totalRating -->
+
+											<div class="pro-rev-write">
+												<div class="write-text">
+													<h2>상품평을 써보세요.</h2>
+													<p>상품평 작성하고 포인트 적립해가세요!</p>
+													<div class="btn_box">
+														<a href="cart.html" class="link-btn btn-radius3">상품평 작성</a>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<!-- // pro_review_contain -->
+										
+										<!-- 포토 모아보기 -->
+										<div class="photo-plus-wrap">
+											<div class="detail-title-wrap">
+												<h2>포토 모아보기(506건)</h2>
+											</div>
+											<div class="photo-contents">
+												<div class="photo-box row">
+
+													<div class="photo-item col-md-8">
+														<a href="#;" data-popup="photoItem">
+															<p class="img-wrap">
+																<img src="../images/temp/img_thumb04.png" alt="img">
+															</p>
+														</a>
+													</div>
+
+													<div class="photo-item col-md-8">
+														<a href="#;" data-popup="photoItem">
+															<p class="img-wrap">
+																<img src="../images/temp/img_thumb04.png" alt="img">
+															</p>
+														</a>
+													</div>
+
+													<div class="photo-item col-md-8">
+														<a href="#;" data-popup="photoItem">
+															<p class="img-wrap">
+																<img src="../images/temp/img_thumb04.png" alt="img">
+															</p>
+														</a>
+													</div>
+
+													<div class="photo-item col-md-8">
+														<a href="#;" data-popup="photoItem">
+															<p class="img-wrap">
+																<img src="../images/temp/img_thumb04.png" alt="img">
+															</p>
+														</a>
+													</div>
+
+													<div class="photo-item col-md-8">
+														<a href="#;" data-popup="photoItem">
+															<p class="img-wrap">
+																<img src="../images/temp/img_thumb04.png" alt="img">
+															</p>
+														</a>
+													</div>
+
+													<div class="photo-item col-md-8">
+														<a href="#;" data-popup="photoItem">
+															<p class="img-wrap">
+																<img src="../images/temp/img_thumb04.png" alt="img">
+															</p>
+														</a>
+													</div>
+
+													<div class="photo-item col-md-8">
+														<a href="#;" data-popup="photoItem">
+															<p class="img-wrap">
+																<img src="../images/temp/img_thumb04.png" alt="img">
+															</p>
+														</a>
+													</div>
+
+													<div class="photo-item col-md-8 last-photo-plus"><!-- 더보기 -->
+														<a href="#;" data-popup="photo-plusitem">
+															<p class="img-wrap">
+																<img src="../images/temp/img_thumb04.png" alt="img">
+															</p>
+														</a>
+													</div>
+
+												</div>
+												<!-- // photo-box -->
+											</div>
+											<!-- // photo-contents -->
+										</div>
+										<!-- // photo-plus-wrap -->
+
+										<div class="all-review-wrap">
+											<div class="detail-title-wrap">
+												<h2>상품평(1,510건)</h2>
+
+												<div class="rev-sort">
+													<div class="lank_Box">
+														<ul class="lank">
+															<li>최신순
+																<div class="lank-choice">
+																	<p>최신순</p>
+																	<p>평점 높은순</p>
+																	<p>평점 낮은순</p>
+																</div>
+															</li>
+															<li>전체보기
+																<div class="lank-choice">
+																	<p>전체보기</p>
+																	<p>포토 상품평</p>
+																	<p>일반 상품평</p>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</div>
+
+											</div>
+
+											<div class="rev-contents">
+												<!-- 아이템 -->
+												<div class="rev-item-box">
+
+													<div class="downer detail">
+														<div class="rating-review">
+															<div class="stars">
+																<fieldset class="rating clearfix">
+																	<input type="radio" id="star_8212_5" value="5" >
+																	<label class="label" for="star_8212_5" title="5점"></label>
+
+																	<input type="radio" id="star_8212_4" value="4" disabled  checked tabindex="0">
+																	<label class="label" for="star_8212_4" title="4점"></label>
+
+																	<input type="radio" id="star_8212_3" value="3" >
+																	<label class="label" for="star_8212_3" title="3점"></label>
+
+																	<input type="radio" id="star_8212_2" value="2" disabled  checked tabindex="0">
+																	<label class="label" for="star_8212_2" title="2점"></label>
+
+																	<input type="radio" id="star_8212_1" value="1" disabled  checked tabindex="0">
+																	<label class="label" for="star_8212_1" title="1점"></label>
+																</fieldset>
+															</div>
+														</div>
+														<div class="rating-date">
+															<ul>
+																<li>bbee***</li>
+																<li class="option">옵션 : 로얄 헤이즐넛 227g(홀빈)</li>
+																<li class="option">2020-06-23</li>
+															</ul>
+														</div>
+													</div>
+
+													<div class="rv-contents"><!-- 상품평 메인 -->
+														<p class="contents">
+															깔끔하고 맛이 좋아요. 원두중에 만족도 높아요. 다만 배송이 아쉬웠어요.<br>
+														</p>	
+														<div class="rv-photo-plus-wrap"><!-- 포토 썸네일-->
+															<div class="rv-photo-box">
+																<p class="img-wrap">
+																	<img src="../images/temp/img_thumb02.png" alt="img" />
+																</p>
+																<span>+3</span>
+															</div>
+														</div>
+														<div class="rv-more-cotents"><!-- 상품평 내용 토글 -->
+															<div class="rv-ph-bx row">
+																<div class="rv-ph-item col-md-3">
+																	<p class="img-wrap"><img src="../images/temp/img_thumb02.png" alt="" /></p>
+																</div>
+																<div class="rv-ph-item col-md-3">
+																	<p class="img-wrap"><img src="../images/temp/img_thumb03.png" alt="" /></p>
+																</div>
+																<div class="rv-ph-item col-md-3">
+																	<p class="img-wrap"><img src="../images/temp/img_thumb04.png" alt="" /></p>
+																</div>
+															</div>
+															<p>
+																깔끔하고 맛이 좋아요. 원두중에 만족도 높아요. 다만 배송이 아쉬웠어요.<br>
+																깔끔하고 맛이 좋아요. 원두중에 만족도 높아요. 다만 배송이 아쉬웠어요.<br>
+																깔끔하고 맛이 좋아요. 원두중에 만족도 높아요. 다만 배송이 아쉬웠어요.
+															</p>
+														</div>
+													</div>	
+
+												</div>
+												<!-- // 아이템 -->
+
+												<!-- 아이템 -->
+												<div class="rev-item-box">
+
+													<div class="downer detail">
+														<div class="rating-review">
+															<div class="stars">
+																<fieldset class="rating clearfix">
+																	<input type="radio" id="star_8212_5" value="5" >
+																	<label class="label" for="star_8212_5" title="5점"></label>
+
+																	<input type="radio" id="star_8212_4" value="4">
+																	<label class="label" for="star_8212_4" title="4점"></label>
+
+																	<input type="radio" id="star_8212_3" value="3" disabled  checked tabindex="0">
+																	<label class="label" for="star_8212_3" title="3점"></label>
+
+																	<input type="radio" id="star_8212_2" value="2" disabled  checked tabindex="0">
+																	<label class="label" for="star_8212_2" title="2점"></label>
+
+																	<input type="radio" id="star_8212_1" value="1" disabled  checked tabindex="0">
+																	<label class="label" for="star_8212_1" title="1점"></label>
+																</fieldset>
+															</div>
+														</div>
+														<div class="rating-date">
+															<ul>
+																<li>bbee***</li>
+																<li class="option">옵션 : 로얄 헤이즐넛 227g(홀빈)</li>
+																<li class="option">2020-06-23</li>
+															</ul>
+														</div>
+													</div>
+
+													<div class="rv-contents"><!-- 상품평 메인 -->
+														<p class="contents">
+															상품평은 2줄까지만 노출시켜주세요.<br>
+															상품평은 2줄까지만 노출시켜주세요.<br>
+															상품평은 2줄까지만 노출시켜주세요.
+														</p>	
+														<div class="rv-photo-plus-wrap"><!-- 포토 썸네일-->
+															<div class="rv-photo-box">
+																<p class="img-wrap">
+																	<img src="../images/temp/img_thumb02.png" alt="img" />
+																</p>
+																<span>+3</span>
+															</div>
+														</div>
+														<div class="rv-more-cotents"><!-- 상품평 내용 토글 -->
+															<div class="rv-ph-bx row">
+																<div class="rv-ph-item col-md-3">
+																	<p class="img-wrap"><img src="../images/temp/img_thumb02.png" alt="" /></p>
+																</div>
+																<div class="rv-ph-item col-md-3">
+																	<p class="img-wrap"><img src="../images/temp/img_thumb03.png" alt="" /></p>
+																</div>
+																<div class="rv-ph-item col-md-3">
+																	<p class="img-wrap"><img src="../images/temp/img_thumb04.png" alt="" /></p>
+																</div>
+															</div>
+															<p>
+																리뷰전체내용입니다.<br>
+																리뷰전체내용입니다.<br>
+																리뷰전체내용입니다.
+															</p>
+														</div>
+													</div>
+
+												</div>
+												<!-- // 아이템 -->
+
+												<!-- 아이템 -->
+												<div class="rev-item-box">
+
+													<div class="downer detail">
+														<div class="rating-review">
+															<div class="stars">
+																<fieldset class="rating clearfix">
+																	<input type="radio" id="star_8212_5" value="5" disabled checked tabindex="0">
+																	<label class="label" for="star_8212_5" title="5점"></label>
+
+																	<input type="radio" id="star_8212_4" value="4" disabled checked tabindex="0">
+																	<label class="label" for="star_8212_4" title="4점"></label>
+
+																	<input type="radio" id="star_8212_3" value="3" disabled checked tabindex="0">
+																	<label class="label" for="star_8212_3" title="3점"></label>
+
+																	<input type="radio" id="star_8212_2" value="2" disabled checked tabindex="0">
+																	<label class="label" for="star_8212_2" title="2점"></label>
+
+																	<input type="radio" id="star_8212_1" value="1" disabled checked tabindex="0">
+																	<label class="label" for="star_8212_1" title="1점"></label>
+																</fieldset>
+															</div>
+														</div>
+														<div class="rating-date">
+															<ul>
+																<li>bbee***</li>
+																<li class="option">옵션 : 로얄 헤이즐넛 227g(홀빈)</li>
+																<li class="option">2020-06-23</li>
+															</ul>
+														</div>
+													</div>
+
+													<div class="rv-contents"><!-- 상품평 메인 -->
+														<p class="contents">
+															상품평은 2줄까지만 노출시켜주세요.<br>
+															상품평은 2줄까지만 노출시켜주세요.<br>
+															상품평은 2줄까지만 노출시켜주세요.
+														</p>	
+														<div class="rv-more-cotents"><!-- 상품평 내용 토글 -->
+															<p>
+																리뷰전체내용입니다.<br>
+																리뷰전체내용입니다.<br>
+																리뷰전체내용입니다.
+															</p>
+														</div>
+													</div>
+
+												</div>
+												<!-- // 아이템 -->
+
+											</div>
+											<!-- // rev-contents -->
+										</div>
+										<!-- // all-review-wrap -->
+									</div>
+									<!-- // rev-contents -->
+
+									<div class="pagination">
+										<span class="on">1</span><!-- 해당페이지일 경우 on클래스가 붙음-->
+										<span>2</span>
+										<span>3</span>
+										<span>4</span>
+										<span>5</span>
+									</div>
+
+								</div>
+								<!-- // 상품평 -->
+
+								<!-- 상품문의 -->
+								<div id="pro-qna" class="item-cont ">
+
+									<div class="title-box-wrap">
+										<h2>상품문의</h2>
+										<p>상품 문의사항이 아닌 반품/교환/배송 관련 문의는 <a href="qna-write.html">1:1 문의</a>를 이용해주세요.</p>		
+										<div class="btn_box">
+											<a href="qna-write.html" class="link-btn btn-radius3">상품문의</a>
+										</div>
+									</div>
+
+									<div class="qna-box">
+										<div class="qna-wrap">
+											<ul>												
+												<!-- 질문 -->
+												<li>
+													<div class="qna-title">
+														<table class="qna-table">
+															<tr>
+																<td><p class="before-answer">답변대기</p></td>
+																<td>이 상품 227g 은 언제 입고되는 걸까요?</td>
+																<td>asfd****</td>
+																<td>2020-07-01</td>
+															</tr>
+														</table>
+													</div>													
+													<div class="qna-content">
+														<table class="qna-table">
+															<tr>
+																<td colspan="4" class="qna-cont-small">이 상품 227g 은 언제 입고되는 걸까요? 이 상품 227g 은 언제 입고되는 걸까요? 이 상품 227g 은 언제 입고되는 걸까요? 이 상품 227g 은 언제 입고되는 걸까요?</td>
+															</tr>
+														</table>
+													</div>
+												</li>
+												<!-- // 질문 -->
+												<!-- 질문 -->
+												<li>
+													<div class="qna-title">
+														<table class="qna-table">
+															<tr>
+																<td><p class="before-answer">답변대기</p></td>
+																<td>이 상품 227g 은 언제 입고되는 걸까요?</td>
+																<td>asfd****</td>
+																<td>2020-07-01</td>
+															</tr>
+														</table>
+													</div>													
+													<div class="qna-content">
+														<table class="qna-table">
+															<tr>
+																<td colspan="4" class="qna-cont-small">이 상품 227g 은 언제 입고되는 걸까요? 이 상품 227g 은 언제 입고되는 걸까요? 이 상품 227g 은 언제 입고되는 걸까요? 이 상품 227g 은 언제 입고되는 걸까요?</td>
+															</tr>
+														</table>
+													</div>
+												</li>
+												<!-- // 질문 -->
+												<!-- 질문 -->
+												<li>
+													<div class="qna-title">
+														<table class="qna-table">
+															<tr>
+																<td><p class="after-answer">답변완료</p></td>
+																<td>이 상품 칼로리가 궁금해요!	</td>
+																<td>asfd****</td>
+																<td>2020-07-01</td>
+															</tr>
+														</table>
+													</div>													
+													<div class="qna-content">
+														<table class="qna-table">
+															<tr>
+																<td colspan="4" class="qna-cont-small">
+																 이 상품 칼로리가 궁금해요!	칼로리가 얼마나되나요?
+																</td>
+															</tr>
+														</table>
+														<table class="qna-table answer-table">
+															<tr>
+																<td></td>
+																<td>
+																	<div class="answer">
+																		<h3>답변</h3>
+																		<h4>
+																			안녕하세요! 쟈뎅입니다.<br>
+																			이 제품의 칼로리는 10Kal 입니다.<br>
+																			감사합니다.
+																		</h4>
+																	</div>
+																</td>
+																<td>쟈뎅(판매자)</td>
+																<td>2020-07-01</td>
+															</tr>
+														</table>
+													</div>
+												</li>
+												<!-- // 질문 -->
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!-- // 상품문의 -->
+
+								<!-- 정보고시 -->
+								<div id="pro-info" class="item-cont ">
+									<div class="title-box-wrap">
+										<h2>상품정보고시</h2>										
+									</div>
+									<div class="info-box ">
+
+										<div class="info-cont row" >
+											<div class="info-item col-md-3" id="productinfo">
+												<a href="http://b2b.jardinshop.co.kr/data/basicitem/21361903/7JWE7JuM7Yuw_7Yuw67Cx_7Jik66CM7KeA7J6Q66q967iU656Z7Yuw_10P.png">
+													<p class="img-wrap">
+														<img src="http://b2b.jardinshop.co.kr/data/basicitem/21361903/7JWE7JuM7Yuw_7Yuw67Cx_7Jik66CM7KeA7J6Q66q967iU656Z7Yuw_10P.png" alt="img">
+													</p>
+												</a>
+											</div>
+										</div>
+
+										<div class="deliver-info">
+											<div class="title-box-wrap">
+												<h2>배송정보고시</h2>										
+											</div>
+
+											<div class="info-contents">
+												<h2>배송 정보</h2>
+												<ul>
+													<li>배송 방법 : 택배</li>
+													<li>배송 지역 : 전국 지역 (제주 도서/산간지역 별도)</li>
+													<li>배송 비용 : 총 결제금액이 20,000원 미만일 경우 배송비용 3,000원이 추가됩니다.</li>
+													<li>배송 안내 : 재고가 없거나 재입고 될 경우 7~14일이 소요됩니다.</li>													
+												</ul>
+												<p>
+													주문상품이 여러 박스로 나누어 배송 될 경우 배송비 추가 될 수 있습니다.<br>
+													(무거운 음료, 파손이 쉬운 상품은 안전 배송을 위해 분리배송될 수 있습니다.)
+												</p>
+											</div>
+
+											<div class="info-contents">
+												<h2>교환 및 반품</h2>
+												<ul>
+													<li>박스개봉 후 , 반품처리 불가하오니 구입하실때 신중하게 선택하시기 바랍니다.</li>
+													<li>상품에 하자가 있을 경우, 소비자 피해보상규정에 의거 100% 반품/환불/교환해 드립니다.</li>			
+												</ul>
+											</div>
+
+											<div class="info-contents">
+												<h2>결제안내</h2>
+												<ul>
+													<li>카드 결제나 무통장 입금을 하시는 경우 입금/결제 확인 후 상품이 배송됩니다.</li>
+													<li>무통장 입금 시 주문자와 입금자가 다른 경우 배송이 지연될 수 있습니다. 게시판에 정보를 남겨주셔야 합니다.</li>
+												</ul>
+											</div>
+
+											<div class="info-contents">
+												<h2>기타 주의사항</h2>
+												<ul>
+													<li>환불 시 반품 확인 여부를 확인 한 후 3일 이내에 결제금액을 환불해 드립니다.</li>
+													<li>신용카드로 결제하신 경우, 신용카드 승인을 취소하면 결제 대금이 청구되지 않습니다.</li>
+												</ul>
+											</div>
+
+										</div>
+										<!-- // deliver-info -->
+
+									</div>
+								</div>
+								<!-- // 정보고시 -->
+							</div>
+						</section>
+						
+					</div>
+					<!-- // detail-contain -->	
+				</div>
+				<!-- // wrapperMd -->	
+			</div>
+			<!-- // cotent-body -->	
+			
+			<!-- footer include-->
+			<footer class="footer">
+				<div class="wrapperMd">
+					<div class="info-wrap">
+						<div class="cont-box customer">
+							<h2>고객센터 <strong>02-546-3881</strong></h2>
+						</div>
+						<div class="cont-box info">
+							<a href="privacy.html">개인정보취급방침</a>
+							<a href="privacy02.html">이용약관</a>
+							<a href="http://jardin.co.kr/front/board.php?bbs_id=recruit_notice">채용안내</a>
+							<a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=2118124727&apv_perm_no=">사업자정보확인</a>
+							<a href="http://jardinshop.co.kr/confirmPp.php">에스크로서비스</a>
+						</div>
+						
+					</div>	
+
+					<div class="content">
+						<div class="cont-box info-bord">
+							<ul>
+								<li>카카오톡 플러스 친구 <a href="https://pf.kakao.com/_xczgxjT" target="_blank">@jardin</a> 추가하고 소식과 혜택을 받아보세요.</li>
+								<li><a href="faq.html">자주묻는 질문</a>이 궁금해요.</li>
+								<li><a href="login.html">회원가입</a>하고 회원 전용 혜택을 받아보세요.</li>
+							</ul>
+						</div>
+						<div class="cont-box company-info">
+							<p>(쟈뎅) 서울시 강남구 논현동 4-21번지 영 빌딩</p>
+							<p>E-mail : kimmy5648@jardin.co.kr</p>
+							<p>사업자등록번호 : 211-81-24727 / 통신판매업신고번호 : 제 강남 - 1160호</p>
+							<p>대표이사 : 윤상용 외 1인 / 개인정보관리책임자 : 윤상용</p>
+							<p>tel : 02-546-3881 / fax : 02-542-4680 / mail : kimmy5648@jardin.co.kr</p>
+						</div>
+					</div>
+
+					<div class="content content02">
+						<div class="cont-box sns">
+							<ul>
+								<li><a href="https://www.instagram.com/jardin_official/" target="_blank"><img src="../images/common/ico_instar.png" alt="인스타그램" /></a></li>
+								<li><a href="https://www.facebook.com/thejardin/" target="_blank"><img src="../images/common/ico_facebook.png" alt="페이스북" /></a></li>
+								<li><a href="http://blog.naver.com/jardinblog" target="_blank"><img src="../images/common/ico_blog.png" alt="블로그" /></a></li>
+								<li><a href="https://www.youtube.com/channel/UCbHd-yVP7uFTqDW0LB3V6TQ" target="_blank"><img src="../images/common/ico_youtube.png" alt="유튜브" /></a></li>
+							</ul>
+						</div>
+						<div class="cont-box copyright">
+							<p>COPYRIGHT (주)쟈뎅 ALL RIGHTS RESERVED.</p>
+						</div>
+					</div>
+					
+				</div>
+			</footer>
+			<!-- // footer include-->
+		</div>		
+		<!-- // contents-wrap -->
+	
+	</div>
+	<!-- // bodyWrap -->
+
+
+	<div class="popup-wrap">
+		<div class="popup-overlay"></div>
+		
+		<!-- 포토모아보기 팝업-->
+		<div class="popup" id="photoItemPopup">
+			<div class="popup-inner">
+				<div class="title-wrap">					
+					<a href="javascript:void(0)" class="close-popup">팝업 닫기</a>
+				</div>
+				<div class="ph-btn-box big-ph-btn">
+					<span class="btn_prev">prev</span>
+					<span class="btn_next">next</span>
+				</div>
+				<div class="photo-wrap">
+					<div class="photo-box">
+						<p class="img-wrap"><img src="../images/temp/img_thumb06.png" alt="포토상품평" /></p>
+						<div class="ph-btn-box">
+							<span class="btn_prev">prev</span>
+							<span class="btn_next">next</span>
+						</div>
+					</div>
+					<div class="contents">
+						<div class="cont-title-box">
+							<div class="downer detail">
+								<div class="rating-review">
+									<div class="rating-date">
+										<ul>
+											<li>bbee***</li>
+											<li class="option">2020-06-23</li>
+										</ul>
+										<p class="option02">옵션 : 로얄 헤이즐넛 227g(홀빈)</p>
+									</div>
+									<div class="stars">
+										<fieldset class="rating clearfix">
+											<input type="radio" id="star_8212_5" value="5" >
+											<label class="label" for="star_8212_5" title="5점"></label>
+
+											<input type="radio" id="star_8212_4" value="4" disabled  checked tabindex="0">
+											<label class="label" for="star_8212_4" title="4점"></label>
+
+											<input type="radio" id="star_8212_3" value="3" >
+											<label class="label" for="star_8212_3" title="3점"></label>
+
+											<input type="radio" id="star_8212_2" value="2" disabled  checked tabindex="0">
+											<label class="label" for="star_8212_2" title="2점"></label>
+
+											<input type="radio" id="star_8212_1" value="1" disabled  checked tabindex="0">
+											<label class="label" for="star_8212_1" title="1점"></label>
+										</fieldset>
+									</div>
+								</div>
+								
+							</div>
+							<!-- // downer -->
+							<div class="rv-ph-contents">
+								<p>
+									너무 맛있어요! 커피 먹고싶을땐 쟈뎅이죠! 좋아요 좋아요 좋아요<br>
+									너무 맛있어요! 커피 먹고싶을땐 쟈뎅이죠! 좋아요 좋아요 좋아요<br>
+									너무 맛있어요! 커피 먹고싶을땐 쟈뎅이죠! 좋아요 좋아요 좋아요<br>
+									너무 맛있어요! 커피 먹고싶을땐 쟈뎅이죠! 좋아요 좋아요 좋아요<br>
+									너무 맛있어요! 커피 먹고싶을땐 쟈뎅이죠! 좋아요 좋아요 좋아요<br>
+									너무 맛있어요! 커피 먹고싶을땐 쟈뎅이죠! 좋아요 좋아요 좋아요<br>
+									너무 맛있어요! 커피 먹고싶을땐 쟈뎅이죠! 좋아요 좋아요 좋아요<br>
+									너무 맛있어요! 커피 먹고싶을땐 쟈뎅이죠! 좋아요 좋아요 좋아요<br>
+									너무 맛있어요! 커피 먹고싶을땐 쟈뎅이죠! 좋아요 좋아요 좋아요<br>
+									너무 맛있어요! 커피 먹고싶을땐 쟈뎅이죠! 좋아요 좋아요 좋아요<br>
+								</p>
+							</div>
+
+							<div class="re-ph-answer">
+								<h2></h2>
+								<p>고객님 후기 감사합니다 ^^<br>항상 좋은 제품으로 보답할게요!<br>땡쿠땡쿠땡쿠<br>땡쿠땡쿠땡쿠땡쿠<br>땡쿠땡쿠땡쿠<br></p>
+							</div>
+
+						</div>
+						<!-- // cont-title-box-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // end popup -->
+
+		<!-- 포토모아보기 더보기 팝업-->
+		<div class="popup" id="photo-plusitemPopup">
+			<div class="popup-inner">
+				<div class="title-wrap">					
+					<a href="javascript:void(0)" class="close-popup">팝업 닫기</a>
+				</div>
+				<div class="contents">
+					<div class="ph-plus-imgbox row">
+						<div class="ph-plus-Item col-md-6" data-popup="photoItem">
+							<p class="img-wrap"><img src="../images/temp/img_thumb02.png" alt="img" /></p>
+						</div>
+						<div class="ph-plus-Item col-md-6" data-popup="photoItem">
+							<p class="img-wrap"><img src="../images/temp/img_thumb03.png" alt="img" /></p>
+						</div>
+						<div class="ph-plus-Item col-md-6" data-popup="photoItem">
+							<p class="img-wrap"><img src="../images/temp/img_thumb04.png" alt="img" /></p>
+						</div>
+						<div class="ph-plus-Item col-md-6" data-popup="photoItem">
+							<p class="img-wrap"><img src="../images/temp/img_thumb05.png" alt="img" /></p>
+						</div>
+						<div class="ph-plus-Item col-md-6" data-popup="photoItem">
+							<p class="img-wrap"><img src="../images/temp/img_thumb06.png" alt="img" /></p>
+						</div>
+						<div class="ph-plus-Item col-md-6" data-popup="photoItem">
+							<p class="img-wrap"><img src="../images/temp/img_thumb02.png" alt="img" /></p>
+						</div>
+						<div class="ph-plus-Item col-md-6" data-popup="photoItem">
+							<p class="img-wrap"><img src="../images/temp/img_thumb08.png" alt="img" /></p>
+						</div>
+						<div class="ph-plus-Item col-md-6" data-popup="photoItem">
+							<p class="img-wrap"><img src="../images/temp/img_thumb07.png" alt="img" /></p>
+						</div>
+						<div class="ph-plus-Item col-md-6" data-popup="photoItem">
+							<p class="img-wrap"><img src="../images/temp/img_thumb04.png" alt="img" /></p>
+						</div>
+						<div class="ph-plus-Item col-md-6" data-popup="photoItem">
+							<p class="img-wrap"><img src="../images/temp/img_thumb02.png" alt="img" /></p>
+						</div>
+						<div class="ph-plus-Item col-md-6" data-popup="photoItem">
+							<p class="img-wrap"><img src="../images/temp/img_thumb04.png" alt="img" /></p>
+						</div>
+						<div class="ph-plus-Item col-md-6" data-popup="photoItem">
+							<p class="img-wrap"><img src="../images/temp/img_thumb05.png" alt="img" /></p>
+						</div>
+						<div class="ph-plus-Item col-md-6" data-popup="photoItem">
+							<p class="img-wrap"><img src="../images/temp/img_thumb05.png" alt="img" /></p>
+						</div>
+						<div class="ph-plus-Item col-md-6" data-popup="photoItem">
+							<p class="img-wrap"><img src="../images/temp/img_thumb05.png" alt="img" /></p>
+						</div>
+						<div class="ph-plus-Item col-md-6" data-popup="photoItem">
+							<p class="img-wrap"><img src="../images/temp/img_thumb05.png" alt="img" /></p>
+						</div>
+						<div class="ph-plus-Item col-md-6" data-popup="photoItem">
+							<p class="img-wrap"><img src="../images/temp/img_thumb05.png" alt="img" /></p>
+						</div>
+						<div class="ph-plus-Item col-md-6" data-popup="photoItem">
+							<p class="img-wrap"><img src="../images/temp/img_thumb05.png" alt="img" /></p>
+						</div>
+						<div class="ph-plus-Item col-md-6" data-popup="photoItem">
+							<p class="img-wrap"><img src="../images/temp/img_thumb05.png" alt="img" /></p>
+						</div>
+						<div class="ph-plus-Item col-md-6" data-popup="photoItem">
+							<p class="img-wrap"><img src="../images/temp/img_thumb05.png" alt="img" /></p>
+						</div>
+						<div class="ph-plus-Item col-md-6" data-popup="photoItem">
+							<p class="img-wrap"><img src="../images/temp/img_thumb05.png" alt="img" /></p>
+						</div>
+						<div class="ph-plus-Item col-md-6" data-popup="photoItem">
+							<p class="img-wrap"><img src="../images/temp/img_thumb05.png" alt="img" /></p>
+						</div>
+						<div class="ph-plus-Item col-md-6" data-popup="photoItem">
+							<p class="img-wrap"><img src="../images/temp/img_thumb05.png" alt="img" /></p>
+						</div>
+						<div class="ph-plus-Item col-md-6" data-popup="photoItem">
+							<p class="img-wrap"><img src="../images/temp/img_thumb05.png" alt="img" /></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // end popup -->
+	
+	</div>
+	<!-- // popup-wrap -->
+
+
+
+  </body>
+
+  </html>
+
+  <script type="text/javascript">
+	
+	//위시버튼
+	  $('.wish-btn').click(function(){
+		$(this).toggleClass('active');
+		return false;
+	  });
+
+  //상품선택 스크립트
+	$('.select-box').click(function(){
+		$(this).toggleClass('active');
+	});
+
+	$(document).click(function (e) {
+
+		var container = $(".select-box");
+
+		if (!container.is(e.target) && container.has(e.target).length === 0){
+
+			container.removeClass('active');
+
+		}	
+
+	});
+
+	//상품삭제
+	$('.option-select-item .close-btn').click(function(){
+		$(this).parent().hide();
+	});
+
+	//장바구니 알럿
+	$('#more_CART_detail').click(function(){
+		alert('장바구니에 담겼습니다. 장바구니로 이동 하시겠습니까?')
+	});
+
+
+	//상세설명~ 정보고시 탭 스크립트
+	$('ul.tab li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('ul.tab li').removeClass('current');
+		$('.item-cont').removeClass('current');
+		
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+
+		var posY = $(".item-contents").offset().top -62; // 탭클릭시 컨텐츠가 탑으로 스크롤 되게끔
+		$("html, body").stop().animate({scrollTop:posY},100);
+
+		return false;	
+		
+	});
+
+	
+	// 상품평 최신순~팝업 스크립트 
+	$('.lank li').click(function(){
+		//alert('asfs');
+		$(this).children('.lank-choice').addClass('active');
+		$(this).siblings('.lank li').children('.lank-choice').removeClass('active');
+	});
+
+	/*나를 제외한 영역을 클릭시 숨김처리*/
+	 $(document).mouseup(function (e){
+
+		var containers = $('.lank-choice'); //숨김처리될 객체
+
+		if( containers.has(e.target).length === 0){
+
+		  containers.removeClass('active');
+
+		}
+
+	  });
+	
+	//상품평 토글
+	$(".rev-item-box .contents").click(function() {
+		$(this).siblings('.rv-more-cotents').slideToggle();	
+		$(this).siblings('.rv-photo-plus-wrap').toggle();
+		// 링크 페이지 이동 중지
+		return false;
+	});
+
+	
+	//상품문의 토글
+	$(".qna-wrap ul li").click(function() {
+		$(this).children('.qna-content').slideToggle();		
+		$(this).siblings().children('.qna-content').slideUp();	
+		// 링크 페이지 이동 중지
+		return false;
+	});
+
+
+	//정보고시 줌기능
+	$('#productinfo').lightGallery({
+		thumbnail:false,
+		controls:false,
+		download:true,
+		//zoom:false,
+		fullScreen:false,
+		share:false,
+		autoplayControls:false,
+
+	});
+
+
+  </script>
